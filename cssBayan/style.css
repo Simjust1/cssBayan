@@ -1,14 +1,9 @@
 
-
-
-/* Start for the 1920 dimension (DESKTOP) */
-@media only screen and (max-width: 1920px) {
-
 body {
   background-color: #F5F5EB;
   margin: 0 auto;
-  width: 100%;
-  font-size: 180%;
+  width: 80%;
+  font-size: 250%;
 }
 
 .wrapper {
@@ -73,8 +68,8 @@ body {
 }
 
 @keyframes visib {
-  0% {opacity: 0; width: 70%;}
-  100% {opacity: 1; width: 50%;}
+  0% {opacity: 0; width: 60%;}
+  100% {opacity: 1; width: 40%;}
 }
 
 
@@ -115,7 +110,7 @@ body {
 
 .other-meme img[hidden] {
   cursor: pointer;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -133,7 +128,22 @@ body {
 }
 
 .meme_image {
-  padding: 5% 0;
+  padding: 2% 0;
+}
+
+
+
+/* Start for the 1920 dimension (DESKTOP) */
+@media only screen and (max-width: 1920px) {
+  body {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 180%;
+  }
+
+
+.wrapper {
+  margin: 2% 15%;
 }
 
 }  /* End for the 1920 dimension (DESKTOP) */
