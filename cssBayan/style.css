@@ -1,133 +1,4 @@
 
-body {
-  background-color: #F5F5EB;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 250%;
-}
-
-.wrapper {
-  margin: 2% 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.header p {
-  font-weight: bolder;
-  font-size: 170%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-.other-meme, .header {
-  width: 100%;
-}
-
-.other-meme p {
-  color: #085EDA;
-  font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.wrapper:hover span[hidden]{
-  display: block;
-  cursor: pointer;
-  transition: ease-out 0.4s;
-}
-
-.wrapper:hover p {
-  color: #1A1A1A;
-  transition: color ease-out 0.4s;
-}
-
-.itemplus {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 100px;
-}
-
-.itemplus:hover {
-  transition: ease-out .3s;
-}
-
-
-.other-meme img[hidden] {
-  cursor: pointer;
-  width: 70%;
-}
-
-.other-meme:hover img[hidden] {
-  display: block;
-  cursor: pointer;
-  margin: 0 auto;
-  transition: all ease-out 0.7s;
-  width: 50%;
-  transition-duration: 4s;
-}
-
-.button__input {
-  display: none;
-}
-
-.button__label {
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.button__input:checked ~ * .meme__text {
-  color: #1A1A1A;
-}
-
-.button__input:active ~ * .meme__text {
-  color: #085EDA;
-}
-
-.button__input:active ~ * .plus {
-  filter: sepia(1) hue-rotate(180deg) saturate(10);
-}
-
-.button__input:checked ~ * .meme_image {
-  display: block;
-}
-
-.other-meme:hover span {
-  transform: rotate(45deg);
-}
-
-.other-meme img[hidden] {
-  cursor: pointer;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.other-meme:hover img[hidden]{
-  display: block;
-}
-
-.plus {
-  background-image: url(/cssBayan/icons/svg30.svg);
-  background-repeat: no-repeat;
-  width: 6%;
-  aspect-ratio: 1/1;
-}
-
-.line {
-  width: 100%;
-  background-color: #D9DFE4;
-}
-
-.meme_image {
-  padding: 5% 0;
-}
 
 
 /* Start for the 1920 dimension (DESKTOP) */
@@ -169,6 +40,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.itemplus {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 100px;
+}
+
+@media (hover: hover) {
+
 .wrapper:hover span[hidden]{
   display: block;
   cursor: pointer;
@@ -180,29 +59,43 @@ body {
   transition: color ease-out 0.3s;
 }
 
-.itemplus {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 100px;
-}
-
 .itemplus:hover {
   transition: ease-out .3s;
 }
 
-
 .other-meme img[hidden] {
   cursor: pointer;
-  width: 70%;
+  width: 50%;
+  margin: 0 auto;
 }
+
+
+
 
 .other-meme:hover img[hidden] {
   display: block;
   cursor: pointer;
   margin: 0 auto;
   transition: all ease-out 0.3s;
-  width: 50%;
+  animation: visib 1.2s both;
 }
+
+@keyframes visib {
+  0% {opacity: 0; width: 70%;}
+  100% {opacity: 1; width: 50%;}
+}
+
+
+
+
+
+.other-meme:hover span {
+  transform: rotate(45deg);
+}
+
+}
+
+
 
 .button__input {
   display: none;
@@ -216,6 +109,8 @@ body {
 
 .button__input:checked ~ * .meme__text {
   color: #1A1A1A;
+
+
 }
 
 .button__input:active ~ * .meme__text {
@@ -230,19 +125,9 @@ body {
   display: block;
 }
 
-.other-meme:hover span {
-  transform: rotate(45deg);
-}
 
-.other-meme img[hidden] {
-  cursor: pointer;
-  width: 50%;
-  margin: 0 auto;
-}
 
-.other-meme:hover img[hidden]{
-  display: block;
-}
+
 
 .plus {
   background-image: url(/cssBayan/icons/svg60.svg);
