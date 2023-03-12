@@ -41,13 +41,15 @@ body {
   column-gap: 5%;
 }
 
+
+
+@media (hover: hover) {
+
 .wrapper:hover span[hidden]{
   display: block;
   cursor: pointer;
   transition: ease-out 0.3s;
 }
-
-@media (hover: hover) {
 
 .wrapper:hover p {
   color: #1A1A1A;
