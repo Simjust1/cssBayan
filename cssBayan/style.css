@@ -38,7 +38,7 @@ body {
 .itemplus {
   display: flex;
   justify-content: space-between;
-  column-gap: 100px;
+  column-gap: 5%;
 }
 
 .wrapper:hover span[hidden]{
@@ -170,7 +170,7 @@ body {
 }
 
 .itemplus {
-  column-gap: 25px;
+  column-gap: 5%;
 }
 
 } /* End for the 820*1180 dimension (TABLET) */
