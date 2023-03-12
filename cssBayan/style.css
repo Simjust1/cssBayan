@@ -46,13 +46,13 @@ body {
   column-gap: 100px;
 }
 
-@media (hover: hover) {
-
 .wrapper:hover span[hidden]{
   display: block;
   cursor: pointer;
   transition: ease-out 0.3s;
 }
+
+@media (hover: hover) {
 
 .wrapper:hover p {
   color: #1A1A1A;
@@ -62,14 +62,6 @@ body {
 .itemplus:hover {
   transition: ease-out .3s;
 }
-
-.other-meme img[hidden] {
-  cursor: pointer;
-  width: 50%;
-  margin: 0 auto;
-}
-
-
 
 
 .other-meme:hover img[hidden] {
@@ -84,9 +76,6 @@ body {
   0% {opacity: 0; width: 70%;}
   100% {opacity: 1; width: 50%;}
 }
-
-
-
 
 
 .other-meme:hover span {
@@ -109,8 +98,6 @@ body {
 
 .button__input:checked ~ * .meme__text {
   color: #1A1A1A;
-
-
 }
 
 .button__input:active ~ * .meme__text {
@@ -126,13 +113,17 @@ body {
 }
 
 
-
+.other-meme img[hidden] {
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+}
 
 
 .plus {
-  background-image: url(/cssBayan/icons/svg60.svg);
+  background-image: url(icons/svg60.svg);
   background-repeat: no-repeat;
-  width: 6%;
+  width: 9%;
   aspect-ratio: 1/1;
 }
 
@@ -162,10 +153,14 @@ body {
 }
 
 .plus {
-  background-image: url(/cssBayan/icons/svg30.svg);
+  background-image: url(icons/svg45.svg);
   background-repeat: no-repeat;
-  width: 15%;
+  width: 25%;
   aspect-ratio: 1/1;
+}
+
+.itemplus {
+  column-gap: 25px;
 }
 
 } /* End for the 820*1180 dimension (TABLET) */
@@ -182,7 +177,7 @@ body {
 }
 
 .plus {
-  background-image: url(/cssBayan/icons/svg30.svg);
+  background-image: url(icons/svg30.svg);
   background-repeat: no-repeat;
   width: 25%;
   aspect-ratio: 1/1;
